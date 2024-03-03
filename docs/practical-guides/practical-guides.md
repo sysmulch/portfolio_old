@@ -4,8 +4,6 @@ title: Practical Guides
 nav_order: 3
 has_children: false
 permalink: /docs/practical-guides
-back_to_top: true
-back_to_top_text: "Back to top"
 ---
 
 # Practical Guides
@@ -26,4 +24,3 @@ In 2023, after many years of teaching scientific writing, I was inspired to writ
 Traveling to different countries to teach scientific writing, I realized that many researchers find it challenging to identify a suitable journal in which to publish their paper. In 2014, after giving a talk at a USAID-funded conference in Tanzania, I was invited by SciDev.Net to write an article on selecting a target journal. SciDev.Net is a well-known news source in the science and development sector. The article I wrote was one of the most highly read article for weeks after publication.
 
 [Here is the link to the the article](https://www.scidev.net/global/practical-guides/target-journal-right-research-communicate-publish/.)
-
