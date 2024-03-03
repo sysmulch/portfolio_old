@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Installing eScriptorium on a Cloud Server
-nav_order: 2
+parent: Installation Guides
+nav_order: 1
 ---
 
 # Title
