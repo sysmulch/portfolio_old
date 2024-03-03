@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Installing Moodle LMS on a Cloud Service
+title: Installing Moodle LMS on a Cloud Server
 parent: Installation Guides
 nav_order: 2
 ---
