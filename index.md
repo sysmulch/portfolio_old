@@ -8,8 +8,23 @@ permalink: /
 
 # Hello there
 
-My name is Ravi Murugesan and this is my technical writing portfolio.
+My name is Ravi Murugesan, and this site is my technical writing portfolio.
+{: .fs-6 .fw-300 }
 
-Email: <sysmulch@gmail.com>
+<img style="float: right; max-width: 30%;" src="images/Photograph.jpg">
 
-{: .back_to_top: false}
+I am transitioning to technical writing after wearing many hats, most recently as an instructional writer, e-learning developer, and amateur sysadmin.
+
+I bring
+- diverse writing experience
+- empathy for the user or reader
+- a strong collaborative spirit
+- good questioning and listening skills
+
+[Here is my one-page resume](https://docs.google.com/document/d/1yV_huFjidGQ5e0fNRyvjjBvORnoC409QvgL87Js_QUM/edit?usp=sharing).
+
+My email: <sysmulch@gmail.com>
+
+
+
+
