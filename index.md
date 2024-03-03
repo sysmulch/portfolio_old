@@ -12,4 +12,3 @@ My name is Ravi Murugesan and this is my technical writing portfolio.
 
 Email: <sysmulch@gmail.com>
 
-back_to_top: false
