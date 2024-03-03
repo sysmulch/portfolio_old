@@ -5,7 +5,7 @@ nav_order: 5
 has_children: false
 ---
 
-{: .to-do }
+{: .note-title }
 > To do
 > 
 > Add book chapter ("step by step guide") and 2017 research article
