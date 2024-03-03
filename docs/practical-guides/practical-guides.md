@@ -4,6 +4,8 @@ title: Practical Guides
 nav_order: 3
 has_children: false
 permalink: /docs/practical-guides
+back_to_top: true
+back_to_top_text: "Back to top"
 ---
 
 # Practical Guides

@@ -106,8 +106,8 @@ nav_sort: case_sensitive # Capital letters sorted before lowercase
 # appears at the bottom of every page's main content
 
 # Back to top link
-back_to_top: true
-back_to_top_text: "Back to top"
+# back_to_top: true
+# back_to_top_text: "Back to top"
 
 footer_content: "Copyright &copy; 2024 Ravi Murugesan. Distributed by an <a href=\"https://mit-license.org\">MIT license.</a></a>"
 
