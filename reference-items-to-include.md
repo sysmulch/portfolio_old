@@ -1,22 +1,10 @@
 
-Installation guides
 
-- Installing a publicly accessible eScriptorium test site on a small cloud server
-- Installing and maintaining a small-scale Moodle production site on a cloud server
-
-
-Other TechComm pieces
-
+1. home
+2. installation guides
+3. small TechComm Pieces
 - from STC course portfolio
-
-
-Published practical guides
-
-
-Published research articles
-
-
-Video tutorials
-
-
-Other writing
+4. published practical guides
+5. scholarly publications
+6. Video tutorials
+7. other writing
