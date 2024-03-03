@@ -2,13 +2,14 @@
 layout: default
 title: Practical Guides
 nav_order: 3
-has_children: true
+has_children: false
 permalink: /docs/practical-guides
 ---
 
 # Practical Guides
 
 I have written and published practical guides to help researchers communicate their work.
+{: .fs-6 .fw-300 }
 
 ## Ten Tips for Research Scholars Aiming for Their First Significant Publication
 {: .no_toc }
