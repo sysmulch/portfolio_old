@@ -24,3 +24,4 @@ Traveling to different countries to teach scientific writing, I realized that ma
 
 [Here is the link to the the article](https://www.scidev.net/global/practical-guides/target-journal-right-research-communicate-publish/.)
 
+{: .no_toc }
