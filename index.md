@@ -17,9 +17,9 @@ I am transitioning to technical writing after wearing many hats, most recently a
 
 I bring
 - diverse writing experience
-- empathy for the user or reader
-- a strong collaborative spirit
+- empathy for readers
 - good questioning and listening skills
+- a strong collaborative spirit
 
 [Here is my one-page resume](https://docs.google.com/document/d/1yV_huFjidGQ5e0fNRyvjjBvORnoC409QvgL87Js_QUM/edit?usp=sharing).
 
