@@ -9,7 +9,7 @@ permalink: /
 # Hello there
 
 My name is Ravi Murugesan and this is my technical writing portfolio.
-{: .fs-6 .fw-300 }
 
-<sysmulch@gmail.com>
+Email: <sysmulch@gmail.com>
 
+back_to_top: false
