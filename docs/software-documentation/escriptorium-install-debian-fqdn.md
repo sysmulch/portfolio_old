@@ -33,7 +33,7 @@ To follow this guide, you should first create a cloud server with...
 In this guide, `escriptorium.example.com` is used as the FQDN for the eScriptorium site. As you go through this guide, replace this domain name with your own domain name.
 
 1. Access the DNS records of your domain name.
-2. Add an A record for `escriptorium` that points to the IPv4 address of the server where you plan to install eScriptorium.
+2. Add an A record for `escriptorium` (or any other string) that points to the IPv4 address of the server where you plan to install eScriptorium.
 
 > [!TIP]
 > If you don't have access to the DNS records of your domain name, ask your domain administrator to create a subdomain record to point to the IPv4 address of your server.
@@ -49,7 +49,7 @@ You should
 - have root access to the Debian server where you want to install eScriptorium (or login credentials for a non-root user with sudo permissions)
 - set aside at least 1 to 2 hours for this procedure
 
-## Step 1: Secure the Server
+## Step 1: Secure Your Cloud Server
 
 1. Open the terminal application of your choice on your computer.
 
@@ -106,31 +106,103 @@ You should
     ssh htrfan@77.77.77.77
     ```
 
-    For key-based authentication (replace `./private-key` with the location and filename of your private key):
+    For key-based authentication (replace `.\private-key` with the location and filename of your private key):
 
     ```
-    ssh -i ./private-key htrfan@77.77.77.77
+    ssh -i .\private-key htrfan@77.77.77.77
     ```
 
 > [!TIP]
 > For more rigorous hardening and securing, such as setting up key-based authentication for the non-root user and blocking malicious login attempts, see this guide on [the Linux Handbook website](https://linuxhandbook.com/things-to-do-after-installing-linux-server/). 
 
-## Step 2: Install Apache and Certbot
+## Step 2: Install the Apache Web Server
+
+1. Install the Apache web server.
+
+    ```
+    sudo apt install apache2
+    ```
+
+    > Enter the password for the `htrfan` user when prompted by the sudo command.
 
 
+1. The Apache server may be blocked by the firewall set up earlier. To open both port 80 (normal, unencrypted web traffic) and port 443 (TLS/SSL encrypted traffic), enter the following command:
 
-## Step 3: Install the Programs Required for eScriptorium
+    ```
+    sudo ufw allow 'WWW Full'
+    ```
+
+1. Restart the Apache server.
+
+    ```
+    sudo service apache2 restart
+    ```
+
+1. Check the status of the Apache server.
+
+    ```
+    sudo service apache2 status
+    ```
+
+1. Open a browser tab and go to the IP address of the server, for example, `http://77.77.77.77`. Replace `77.77.77.77` with the IP address of your server. You should see a page titled Apache2 Debian Default Page.
+
+    > Make sure the browser does not redirect you to an HTTPS version of the IP address. This will not work as you have not yet set up HTTPS access.
+
+## Step 3: Install an HTTPS Certificate using Certbot
+
+1. Install `snapd`
+
+    ```
+    sudo apt install snapd
+    ```
+
+1. Remove any previously installed Certbot packages.
+
+    ```
+    sudo apt remove certbot
+    ```
+
+1. Install Certbot
+
+    ```
+    sudo snap install --classic certbot
+    ```
+
+1. Prepare the Certbot command
+
+    ```
+    sudo ln -s /snap/bin/certbot /usr/bin/certbot
+    ```
+
+1. Install a Certbot certificate. This will turn on HTTPS access.
+
+    ```
+    sudo certbot --apache
+    ```
+
+    > Follow the prompts. When asked to enter the domain name for which you would like a certificate, carefully type in the domain name you have created (as per the Domain Requirements section above). For example, `escriptorium.example.com`.
+
+1. Test automatic renewal of the Certbot certificate.
+
+    ```
+    sudo certbot renew --dry-run
+    ```
+
+1. Test that the Certbot command worked. Open a browser tab and go to the HTTPS-enabled domain name, for example, `https://escriptorium.example.com`. You should once again see the Apache2 Debian Default Page.
+
+
+## Step 4: Install the Programs Required for eScriptorium
 
 Note: These instructions are an edited version of the instructions from the UB Mannheim site.
 
-1. First, install all the programs you need to use or install eScriptorium. These include Git, NPM, Postgresql installations, the Redis server, third-party tools, and Python and the virtual environment:
+1. Install the programs you need to install eScriptorium.
 
     ```
     sudo apt install git postgresql postgresql-contrib libpq-dev redis-server gettext netcat-traditional jpegoptim pngcrush libvips build-essential python3 python3-dev python3-venv npm
     ```
 
-    > [!IMPORTANT]
-    > If error messages appear during the Postgresql installation, enter the following commands.
+    >> [!IMPORTANT]
+    >> If error messages appear during the Postgresql installation, enter the following commands.
         
         sudo apt update
         sudo apt update --fix-missing
