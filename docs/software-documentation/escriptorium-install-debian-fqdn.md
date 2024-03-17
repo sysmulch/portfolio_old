@@ -51,9 +51,6 @@ You should
 
 ## Step 1: Secure the Server
 
-> [!NOTE]
-> If you have access to a sudo user account instead of the root user, start from step 6 below.
-
 1. Open the terminal application of your choice on your computer.
 
 1. Locate the access credentials of the Debian server you have created (see System Requirements above).
@@ -61,6 +58,31 @@ You should
 1. From your terminal application, sign into the server as the root user, using the password or SSH key generated at the time of creating the server.
 
     > If you can't sign in to the server using SSH, it could mean that SSH connections are blocked. In that case, sign into your account with your hosting provider and access the server using the hosting provider's browser-based terminal. You can use your terminal application later on after enabling SSH.
+
+1. Update the server.
+
+    ```
+    apt update
+    apt upgrade
+    ```
+
+1. Install the firewall application (ufw).
+
+    ```
+    apt install ufw
+    ```
+
+1. Ensure SSH is allowed.
+
+    ```
+    ufw allow ssh
+    ```
+
+1. Enable the firewall after allowing SSH.
+
+    ```
+    ufw enable
+    ```
 
 1. Create a non-root user. Replace `htrfan` with the username of your choice. And in the steps that follow, replace `htrfan` with the username you have created.
 
@@ -76,18 +98,6 @@ You should
     usermod -aG sudo htrfan
     ```
 
-1. Ensure SSH is allowed.
-
-    ```
-    ufw allow ssh
-    ```
-
-1. Enable firewall after allowing SSH.
-
-    ```
-    ufw enable
-    ```
-
 1. From a new window or tab of your terminal application, access the server with an SSH connection using the sudo user account. Replace `htrfan` with your the username you have created, and `77.77.77.77` with the IP address of your server.
 
     For password authentication:
@@ -101,15 +111,6 @@ You should
     ```
     ssh -i ./private-key htrfan@77.77.77.77
     ```
-
-1. Update the server.
-
-    ```
-    sudo apt update
-    sudo apt upgrade
-    ```
-
-    Type in the password of the sudo user account when prompted. 
 
 > [!TIP]
 > For more rigorous hardening and securing, such as setting up key-based authentication for the non-root user and blocking malicious login attempts, see this guide on [the Linux Handbook website](https://linuxhandbook.com/things-to-do-after-installing-linux-server/). 
