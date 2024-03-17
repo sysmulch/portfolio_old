@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Installing eScriptorium on a Cloud Server
-parent: Installation Guides
+parent: Software Documentation
 nav_order: 1
 ---
 
@@ -62,13 +62,13 @@ You should
 
     > If you can't sign in to the server using SSH, it could mean that SSH connections are blocked. In that case, sign into your account with your hosting provider and access the server using the hosting provider's browser-based terminal. You can use your terminal application later on after enabling SSH.
 
-1. Create a non-root user. Replace `htrfan` with the username of your choice.
+1. Create a non-root user. Replace `htrfan` with the username of your choice. And in the steps that follow, replace `htrfan` with the username you have created.
 
     ```
     adduser htrfan
     ```
 
-    > From this point onward, replace `htrfan` with the username you have created.
+    > Generate a strong password when prompted by the `adduser` command, and save this password.
 
 1. Give `sudo` permissions to the newly created non-root user.
 
@@ -76,22 +76,46 @@ You should
     usermod -aG sudo htrfan
     ```
 
-1. Ensure SSH is allowed 
+1. Ensure SSH is allowed.
 
     ```
-    sudo ufw allow ssh
+    ufw allow ssh
     ```
 
-1. Enable firewall after allowing SSH
+1. Enable firewall after allowing SSH.
 
     ```
-    sudo ufw enable
+    ufw enable
     ```
+
+1. From a new window or tab of your terminal application, access the server with an SSH connection using the sudo user account. Replace `htrfan` with your the username you have created, and `77.77.77.77` with the IP address of your server.
+
+    For password authentication:
+
+    ```
+    ssh htrfan@77.77.77.77
+    ```
+
+    For key-based authentication (replace `./private-key` with the location and filename of your private key):
+
+    ```
+    ssh -i ./private-key htrfan@77.77.77.77
+    ```
+
+1. Update the server.
+
+    ```
+    sudo apt update
+    sudo apt upgrade
+    ```
+
+    Type in the password of the sudo user account when prompted. 
 
 > [!TIP]
 > For more rigorous hardening and securing, such as setting up key-based authentication for the non-root user and blocking malicious login attempts, see this guide on [the Linux Handbook website](https://linuxhandbook.com/things-to-do-after-installing-linux-server/). 
 
 ## Step 2: Install Apache and Certbot
+
 
 
 ## Step 3: Install the Programs Required for eScriptorium
