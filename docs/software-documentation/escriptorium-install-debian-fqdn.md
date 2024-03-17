@@ -51,9 +51,6 @@ You should
 
 ## Step 1: Secure the Server
 
-> [!IMPORTANT]
-> You are going to set up an eScriptorium site that will be publicly accessible, so you must secure the server at the outset.
-
 > [!NOTE]
 > If you have access to a sudo user account instead of the root user, start from step 6 below.
 
@@ -63,10 +60,7 @@ You should
 
 1. From your terminal application, sign into the server as the root user, using the password or SSH key generated at the time of creating the server.
 
-> [!NOTE]
-> If you can't sign in to the server using SSH, it could mean that SSH connections are blocked. In that case, sign into your account with your hosting provider and look for a browser-based terminal. 
-
-You can use your terminal application later on after enabling SSH.
+    > If you can't sign in to the server using SSH, it could mean that SSH connections are blocked. In that case, sign into your account with your hosting provider and access the server using the hosting provider's browser-based terminal. You can use your terminal application later on after enabling SSH.
 
 1. Create a non-root user. Replace `htrfan` with the username of your choice.
 
@@ -74,7 +68,6 @@ You can use your terminal application later on after enabling SSH.
     adduser htrfan
     ```
 
-    > [!NOTE]
     > From this point onward, replace `htrfan` with the username you have created.
 
 1. Give `sudo` permissions to the newly created non-root user.
