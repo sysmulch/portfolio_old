@@ -201,12 +201,14 @@ Note: These instructions are an edited version of the instructions from the UB M
     sudo apt install git postgresql postgresql-contrib libpq-dev redis-server gettext netcat-traditional jpegoptim pngcrush libvips build-essential python3 python3-dev python3-venv npm
     ```
 
-    >> [!IMPORTANT]
+    >> [!IMPORTANT]\
     >> If error messages appear during the Postgresql installation, enter the following commands.
-        
+
+       ``` 
         sudo apt update
         sudo apt update --fix-missing
         sudo apt install postgresql
+        ```
 
 1. Start the servers for Postgresql and Redis
 
