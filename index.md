@@ -6,7 +6,7 @@ layout: home
 permalink: /
 ---
 
-# Hello there
+# Hello there!
 
 My name is Ravi Murugesan, and this site is my technical writing portfolio.
 {: .fs-6 .fw-300 }
