@@ -6,9 +6,9 @@ layout: home
 permalink: /
 ---
 
-# Hello there!
+# Ravi Murugesan
 
-My name is Ravi Murugesan, and I am a technical communicator.
+A technical communicator, worldly and nerdy
 {: .fs-6 .fw-300 }
 
 <img style="float: right; max-width: 30%;" src="images/Photograph.jpg">
