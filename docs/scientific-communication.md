@@ -8,7 +8,9 @@ has_children: false
 # Scientific Communication
 
 ## Ten Tips for Research Scholars Aiming for Their First Significant Publication (2023)
-### A primer
+A primer
+{: .fs-5 .fw-300 }
+
 
 In 2023, after many years of teaching scientific writing, I was inspired to write a practical guide to focus on a crucial stage of an aspiring researcher's journey: their first significant publication in a scholarly journal. As far as I know, there is no practical guide that looks at scientific writing from this particular angle. While developing the guide, I cited about 20 open access articles for readers to find further information. I published this guide in the journal *Science Editor*, which is widely read in the scientific publishing community in the United States and elsewhere.
 
@@ -16,7 +18,7 @@ In 2023, after many years of teaching scientific writing, I was inspired to writ
 
 ## How to Target a Journal That's Right for Your Research (2022)
 A practical guide
-{: .fs-6 .fw-300 }
+{: .fs-4 .fw-300 }
 
 Traveling to different countries to teach scientific writing, I realized that many researchers find it challenging to identify a suitable journal in which to publish their paper. In 2014, after giving a talk at a USAID conference in Tanzania, I was invited by *SciDev.Net* to write an article on selecting a target journal. *SciDev.Net* is a well-known news source in the science and development sector. The article I wrote was one of the most highly read articles on the website for a few weeks after publication.
 
