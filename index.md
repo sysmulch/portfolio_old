@@ -8,14 +8,14 @@ permalink: /
 
 # Ravi Murugesan
 
-Technical communicator, worldly and nerdy
+Training specialist, worldly and nerdy
 {: .fs-6 .fw-300 }
 
-<img style="float: right; max-width: 30%; margin-left:10px;" src="images/Photograph.jpg">
+<img style="float: right; max-width: 30%; margin-left:15px;" src="images/Photograph.jpg">
 
-I've taught scientific writing in many countries, and I've developed online courses for a global audience. With an academic background in engineering, I also have strong technical skills.
+Working for an international development organization, I've facilitated workshops for academics in many countries and played a central role in an online learning initiative.
 
-Check out my work samples on this site. And here's [my LinkedIn profile](https://www.linkedin.com/in/ravimurugesan/).
+Check out my work samples on this site, organized into domains. And here's [my LinkedIn profile](https://www.linkedin.com/in/ravimurugesan/).
 
 I expect to become a U.S. permanent resident in September 2024, and I will be living in Princeton, New Jersey.
 
