@@ -8,20 +8,14 @@ permalink: /
 
 # Hello there!
 
-My name is Ravi Murugesan, and this site is my technical writing portfolio.
+My name is Ravi Murugesan, and I am a technical communicator.
 {: .fs-6 .fw-300 }
 
 <img style="float: right; max-width: 30%;" src="images/Photograph.jpg">
 
-I am transitioning to technical writing after wearing many hats, most recently as an instructional writer, e-learning developer, and amateur sysadmin.
+I've led writing workshops for researchers in many countries, and I've developed online courses for a global audience. With my background in engineering, I'm a bit of a nerd as well.
 
-I bring
-- diverse writing experience
-- empathy for readers
-- good questioning and listening skills
-- a strong collaborative spirit
-
-[Here is my one-page resume](https://docs.google.com/document/d/1yV_huFjidGQ5e0fNRyvjjBvORnoC409QvgL87Js_QUM/edit?usp=sharing).
+I expect to become a U.S. permanent resident in September 2024, and I am open to contract opportunities. Check out my work samples on this site. And here's [my LinkedIn profile](https://www.linkedin.com/in/ravimurugesan/).
 
 My email: <sysmulch@gmail.com>
 
