@@ -5,7 +5,9 @@ nav_order: 3
 has_children: false
 ---
 
-# Installing eScriptorium on a Cloud Server (2024)
+# System Administration
+
+## Installing eScriptorium on a Cloud Server (2024)
 *An installation guide*
 {: .fs-5 .fw-400 }
 
@@ -13,7 +15,7 @@ My wife, who is a librarian, wanted to explore eScriptorium, an application for 
 
 [Installation guide on GitHub](https://github.com/UB-Mannheim/escriptorium/wiki/Installing-eScriptorium-on-a-Cloud-Server-(Debian-11)-with-a-Fully-Qualified-Domain-Name)
 
-# Lessons Learned in Setting Up a Lean Institutional Repository (2021)
+## Lessons Learned in Setting Up a Lean Institutional Repository (2021)
 *A conference talk*
 {: .fs-5 .fw-400 }
 
