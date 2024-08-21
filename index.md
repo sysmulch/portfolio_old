@@ -11,7 +11,7 @@ permalink: /
 Technical communicator, worldly and nerdy
 {: .fs-6 .fw-300 }
 
-<img style="float: right; max-width: 30%;" src="images/Photograph.jpg">
+<img style="float: right; max-width: 30%; margin-left:10px;" src="images/Photograph.jpg">
 
 I've taught scientific writing in many countries, and I've developed online courses for a global audience. With an academic background in engineering, I also have strong technical skills.
 
